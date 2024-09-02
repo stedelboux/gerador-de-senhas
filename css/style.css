@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --primary-color: #2C1746;
+  --weak-color: #E71B32;
+  --medium-color: #FAF408;
+  --strong-color: #00FF85;
+}
+
+/* Estilo Geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0F021B;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  /* Largura relativa à largura da tela */
+  max-width: 1200px;
+  /* Largura máxima para telas grandes */
+  margin: 0 auto;
+  /* Centraliza o container horizontalmente */
+  padding: 20px;
+  /* Espaçamento interno */
+  box-sizing: border-box;
+  /* Inclui padding e border no cálculo da largura */
+  background: #0F021B;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Estilo para o label específico */
+label[for="password"] {
+  font-family: 'Roboto', sans-serif;
+  /* Fonte Roboto Regular */
+  font-weight: 400;
+  /* Peso Regular da fonte Roboto */
+  font-size: 20px;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  color: #8A87AA;
+  /* Cor opcional, ajuste conforme necessário */
+}
+
+/* Estilizando o input de senha gerada */
+#generated-password {
+  font-family: 'Roboto Mono', monospace;
+  /* Define a família da fonte como Roboto Mono */
+  font-weight: 500;
+  /* Define o peso da fonte como Medium */
+  font-size: 40px;
+  /* Define o tamanho da fonte */
+  color: #ffffff;
+  /* Define a cor do texto */
+  padding: 0px;
+  /* (Opcional) Adiciona um espaçamento interno */
+  width: 100%;
+  /* (Opcional) Faz com que o campo ocupe 100% da largura do container pai */
+
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  /* Alinha verticalmente os itens no centro */
+  width: 100%;
+  /* Garante que o container use toda a largura disponível */
+  gap: 24px;
+  /* Espaço entre o label e o input */
+}
+
+input[type="text"] {
+  font-family: 'Roboto', sans-serif;
+  /* Fonte Roboto Medium */
+  font-weight: 500;
+  /* Peso Medium da fonte Roboto */
+  font-size: 40px;
+  /* Tamanho da fonte do campo de entrada */
+}
+
+.vector-icon {
+  width: 32px;
+  /* Largura do vetor */
+  height: 32px;
+  /* Altura do vetor */
+  margin-right: 16px;
+  /* Espaço entre o ícone e o texto */
+}
+
+.label {
+
+  font-size: 16px;
+  /* Tamanho da fonte da label */
+  color: #ffffff;
+  /* Cor do texto da label */
+
+}
+
+h1 {
+  font-family: 'Roboto Mono';
+  /* Define a fonte como Roboto Mono */
+  font-size: 32px;
+  /* Ajusta o tamanho da fonte para 32px */
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  /* Regular */
+  font-size: 24px;
+  color: #FFFFFF;
+  /* Branco */
+}
+
+
+.text-container h1 {
+  font-family: 'Roboto Mono';
+  /* Define a fonte como Roboto Mono */
+  font-size: 32px;
+  /* Ajusta o tamanho da fonte para 32px */
+  color: #ffffff;
+  margin-bottom: 8px;
+  /* Espaço de 8px abaixo do h1 */
+}
+
+.text-container h4 {
+  font-family: 'Roboto', sans-serif;
+  /* Define a fonte como Roboto Regular */
+  font-weight: 400;
+  /* Define o peso da fonte como Regular */
+  font-size: 24px;
+  /* Ajusta o tamanho da fonte para 24px */
+  color: #ffffff;
+  /* Define a cor do texto como branco */
+  margin-top: 0;
+  /* Garante que não haja margem acima do h4 */
+}
+
+.password-generator {
+  display: flex;
+  justify-content: space-between;
+  /* Distribui o espaço entre os itens */
+  align-items: center;
+  /* Alinha os itens verticalmente no centro */
+  margin-bottom: 20px;
+  border: none;
+  /* Remove todas as bordas padrão */
+  border-bottom: 4.4px solid #FD58FF;
+  /* Define apenas a borda inferior */
+  background-color: var(--primary-color);
+  /* Cor de fundo */
+  border-radius: 4px;
+  /* Borda arredondada */
+  padding: 14px;
+  /* Espaçamento interno */
+  box-sizing: border-box;
+  /* Inclui padding e border no cálculo da largura e altura */
+}
+
+.password-generator input {
+  background: none;
+  color: rgb(255, 255, 255);
+  width: 65%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.password-generator button {
+  padding: 10px;
+  background-color: #2C1746;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* Centraliza o ícone verticalmente */
+  justify-content: center;
+  /* Centraliza o ícone horizontalmente */
+  width: auto;
+  /* Ajusta a largura do botão ao conteúdo */
+  height: auto;
+  /* Ajusta a altura do botão ao conteúdo */
+}
+
+.password-generator button:hover {
+  background-color: #0F021B;
+  /* Cor mais escura no hover */
+}
+
+.icon-img {
+  width: 32px;
+  /* Ajusta a largura do ícone */
+  height: 32px;
+  /* Ajusta a altura do ícone */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: auto;
+
+}
+
+
+.options label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+
+.slider-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#length-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#slider-value {
+  font-weight: bold;
+}
+
+.strength-indicator {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#strength-text {
+  font-weight: bold;
+  color: var(--weak-color);
+}
+
+
+/* Container das opções */
+.options-container {
+  align-items: flex-start;
+  /* Alinha os itens verticalmente no topo do container */
+  padding: 40px;
+  /* Aplica 40px de padding em todos os lados */
+  background-color: #180828;
+  display: flex;
+  /* Ativa o flexbox */
+  flex-wrap: wrap;
+  /* Permite que os itens quebrem linha quando necessário */
+  justify-content: space-between;
+  /* Alinha os itens à esquerda */
+  border: 2px solid #694A81;
+  /* Adiciona uma borda de 2px na cor branca */
+  border-radius: 8px;
+  /* (Opcional) Adiciona cantos arredondados à borda */
+}
+
+/* Rótulo principal */
+.main-label {
+  font-family: 'Roboto Mono', monospace;
+  /* Aplica a fonte Roboto Mono */
+  font-weight: 500;
+  /* Peso médio da fonte */
+  font-size: 28px;
+  /* Tamanho da fonte */
+  color: #D7D5EB;
+  /* Cor do texto */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  width: 100%;
+  /* Ocupa toda a largura do contêiner pai */
+  margin-bottom: 40px;
+  /* Adiciona um espaço de 40 pixels abaixo do rótulo */
+}
+
+/* Estilo da div de opções */
+.options {
+  display: flex;
+  flex-direction: column;
+  /* Organiza os itens verticalmente */
+}
+
+/* Estilo dos labels */
+.options label {
+  margin-bottom: 16px;
+  /* Espaçamento entre os labels */
+  font-size: 20px;
+  /* Tamanho da fonte dos labels */
+  color: #8A87AA;
+  /* Cor do texto dos labels */
+  font-family: 'Roboto';
+  /* Fonte Roboto Medium */
+  font-weight: 500;
+  /* Peso da fonte Medium */
+}
+
+.title-label {
+  font-family: 'Roboto', sans-serif;
+  /* Aplica a fonte Roboto */
+  font-weight: 500;
+  /* Peso médio da fonte */
+  font-size: 24px;
+  /* Tamanho da fonte (ajuste conforme necessário) */
+  color: #8A87AA;
+  /* Cor do texto preta */
+}
+
+/* Estilo dos inputs */
+.options input[type="checkbox"] {
+  margin-right: 10px;
+  /* Espaçamento entre a caixa de seleção e o texto */
+}
+
+.slider-container {
+  display: flex;
+  /* Ativa o flexbox para o contêiner */
+  flex-direction: column;
+  /* Alinha os itens verticalmente */
+  align-items: flex-start;
+  /* Alinha os itens à esquerda */
+  gap: 24px;
+  /* Espaço entre os itens */
+  font-size: 24px;
+  /* Tamanho da fonte */
+  color: #8A87AA;
+  /* Cor do texto */
+}
+
+.copy-button-container {
+  text-align: center;
+  /* Centraliza o botão dentro do container */
+  margin-top: 20px;
+  /* Adiciona espaço acima da div */
+}
+
+#copy-password-bottom {
+  padding: 10px 20px;
+  background-color: #FD58FF;
+  color: #0F021B;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#copy-password-bottom:hover {
+  background-color: #0056b3;
+  /* Altera a cor do botão ao passar o mouse */
+}
+
+.strength-container {
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  display: flex;
+  /* Necessário para que o gap funcione */
+  flex-direction: column;
+  /* Alinha os itens de cima para baixo */
+  gap: 24px;
+  /* Espaçamento de 24 pixels entre os itens */
+  align-items: flex-start;
+  /* Alinha os itens à esquerda */
+}
+
+.strength-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+  color: #6e6782;
+  /* Cor da label "Força da senha" */
+}
+
+#strength-bar {
+  width: 300px;
+  height: 32px;
+  background-color: #2b2136;
+  /* Cor do trilho da barra */
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+#strength-bar-inner {
+  height: 100%;
+  width: 0%;
+  /* A largura será controlada pelo JavaScript */
+  background-color: #2C1746;
+  /* Cor inicial da barra (fraca) */
+  transition: width 0.3s, background-color 0.3s;
+  /* Suave transição entre cores e tamanhos */
+}
+
+.strength-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.strength-label-text {
+  font-family: 'Roboto', sans-serif;
+  /* Aplica a fonte Roboto */
+  font-weight: 500;
+  /* Define a fonte como Medium */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  color: #8A87AA;
+  /* Cor do texto preta */
+}
+
+.strength-bar-container {
+  display: flex;
+  /* Ativa o flexbox para o contêiner */
+  flex-direction: column;
+  /* Alinha os itens de cima para baixo */
+  gap: 14px;
+  /* Espaçamento de 14 pixels entre os itens */
+}
+
+/* Contêiner para as características da senha */
+.features-container {
+  display: flex;
+  /* Ativa o flexbox para o contêiner */
+  flex-direction: column;
+  /* Alinha os itens verticalmente */
+  gap: 24px;
+  /* Espaço */
+}
+
+.slider-value-container {
+  margin-bottom: 24px;
+  /* Adiciona 24px de espaço abaixo do controle deslizante */
+  display: inline-flex;
+  /* Utiliza inline-flex para que o contêiner se ajuste ao tamanho do item */
+  justify-content: center;
+  /* Alinha o item horizontalmente no centro */
+  align-items: center;
+  /* Alinha o item verticalmente no centro */
+  background-color: #2C1746;
+  /* Cor de fundo para destacar o contêiner */
+  border-radius: 4px;
+  /* Cantos arredondados opcionais */
+  padding: 16px 24px;
+  /* Padding vertical e horizontal*/
+  border: 1px solid #694A81;
+  /* Borda */
+}
+
+.personalize-container {
+  display: flex;
+  /* Ativa o flexbox para o contêiner */
+  flex-direction: column;
+  /* Alinha os itens verticalmente */
+  gap: 24px;
+  /* Espaço */
+  align-items: flex-start;
+  /* Alinha os itens à esquerda do contêiner */
+
+}
+
+
+/* Estilo dos checkboxes */
+.options input[type="checkbox"] {
+  accent-color: #FD58FF;
+  /* Cor personalizada para o checkbox */
+  width: 24px;
+  /* Largura do checkbox */
+  height: 24px;
+  /* Altura do checkbox */
+  margin-right: 11px;
+  /* Espaço à direita do checkbox */
+  opacity: 0;
+  /* Oculta o checkbox padrão */
+  position: absolute;
+  /* Remove o checkbox padrão do fluxo do documento */
+}
+
+/* Estilo personalizado para o checkbox */
+.checkbox-custom {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #694A81;
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 11px;
+  background-color: #2C1746;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
+}
+
+/* Estilo do checkbox quando marcado */
+.options input[type="checkbox"]:checked+.checkbox-custom {
+  background-color: #ffffff;
+}
+
+/* Estilo do símbolo de marcação usando SVG */
+.options input[type="checkbox"]:checked+.checkbox-custom::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.999,4.942C0.999,2.733 2.79,0.942 4.999,0.942L44.999,0.942C47.208,0.942 48.999,2.733 48.999,4.942L48.999,44.942C48.999,47.151 47.208,48.942 44.999,48.942L4.999,48.942C2.79,48.942 0.999,47.151 0.999,44.942L0.999,4.942Z" fill="%23FFFFFF" stroke="%23FFFFFF" stroke-width="1" stroke-miterlimit="3.999327"/><path d="M42.413,13.356C43.194,12.575 43.194,11.309 42.413,10.528C41.632,9.747 40.366,9.747 39.585,10.528L42.413,13.356ZM18.999,33.942L17.585,35.356C18.366,36.137 19.632,36.137 20.413,35.356L18.999,33.942ZM10.413,22.528C9.632,21.747 8.366,21.747 7.585,22.528C6.804,23.309 6.804,24.575 7.585,25.356L10.413,22.528ZM39.585,10.528L17.585,32.528L20.413,35.356L42.413,13.356L39.585,10.528ZM20.413,32.528L10.413,22.528L7.585,25.356L17.585,35.356L20.413,32.528Z" fill="%230F021B"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Estilo geral do slider */
+#length-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 10px;
+  background: linear-gradient(to right, white 0%, white 12%, #FD58FF 12%, #FD58FF 100%);
+  outline: none;
+  border-radius: 50px;
+  position: relative;
+}
+
+/* Trilho preenchido em branco */
+#length-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  /* Inicia com zero */
+  background-color: white;
+  /* Cor da trilha quando o polegar é arrastado */
+  border-radius: 50px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Estilo do polegar no Chrome/Safari */
+#length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: 2px solid #FD58FF;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#length-slider::-webkit-slider-thumb:hover {
+  background: #2C1746;
+  transform: scale(1.1);
+}
+
+/* Estilo do polegar no Firefox */
+#length-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: 2px solid #FD58FF;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#length-slider::-moz-range-thumb:hover {
+  background: #2C1746;
+  transform: scale(1.1);
+}
+
+/* Estilo da trilha no Firefox */
+#length-slider::-moz-range-progress {
+  background-color: white;
+  /* Cor da trilha preenchida no Firefox */
+}
+
+/* Para o Internet Explorer e Edge */
+#length-slider::-ms-track {
+  width: 100%;
+  height: 10px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+  border-radius: 50px;
+}
+
+#length-slider::-ms-fill-lower {
+  background: white;
+  /* Cor da trilha preenchida */
+  border-radius: 50px;
+}
+
+#length-slider::-ms-fill-upper {
+  background: #FD58FF;
+  border-radius: 50px;
+}
+
+#length-slider::-ms-thumb {
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border: 2px solid #FD58FF;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#length-slider::-ms-thumb:hover {
+  background: #2C1746;
+  transform: scale(1.1);
+}

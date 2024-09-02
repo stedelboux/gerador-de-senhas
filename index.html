@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Configurações básicas do documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+
+  <!-- Link para o arquivo de estilo CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Contêiner principal que agrupa todos os elementos -->
+    <div class="main-container">
+
+      <!-- Contêiner para o ícone e texto principal -->
+      <div class="vector-container">
+        <!-- Ícone de desbloqueio -->
+        <img src="assets/vectors/unlock_x2.svg" alt="Vetor Personalizado" class="vector-icon">
+
+        <!-- Contêiner para o título e subtítulo -->
+        <div class="text-container">
+          <h1>Gerador de Senhas</h1>
+          <h4>Gere instantaneamente uma senha aleatória e segura</h4>
+        </div>
+      </div>
+
+      <!-- Contêiner para o gerador de senhas -->
+      <div class="password-generator">
+        <!-- Contêiner para o campo de entrada da senha gerada -->
+        <div class="input-container">
+          <label for="password" class="label">senha</label>
+          <input type="text" id="generated-password" readonly> <!-- Campo para mostrar a senha gerada -->
+        </div>
+
+        <!-- Contêiner para os botões -->
+        <div class="button-container">
+          <!-- Botão para copiar a senha com imagem -->
+          <button id="copy-password-left" class="icon-button">
+            <img src="assets/vectors/copy_x2.svg" alt="Copiar" class="icon-img">
+          </button>
+
+          <!-- Botão para gerar uma nova senha com imagem -->
+          <button id="generate-password" class="icon-button">
+            <img src="assets/vectors/refresh_cw_x2.svg" alt="Gerar Nova Senha" class="icon-img">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contêiner para opções de personalização da senha -->
+    <div class="options-container">
+      <label class="main-label">Personalize sua senha</label>
+
+      <!-- Contêiner para o controle do número de caracteres -->
+      <div class="personalize-container">
+        <label class="title-label">Número de caracteres</label>
+        <div class="slider-container">
+          <!-- Slider para ajustar o comprimento da senha -->
+          <input type="range" id="length-slider" min="6" max="24" value="12">
+          <div class="slider-value-container">
+            <!-- Mostra o valor atual do slider -->
+            <span id="slider-value">12</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contêiner para as características da senha -->
+      <div class="features-container">
+        <label class="title-label">Características da senha</label>
+        <div class="options">
+          <!-- Caixa de seleção para letras maiúsculas -->
+          <label>
+            <input type="checkbox" id="uppercase">
+            <span class="checkbox-custom"></span>
+            Letras Maiúsculas
+          </label>
+
+          <!-- Caixa de seleção para letras minúsculas (marcada por padrão) -->
+          <label>
+            <input type="checkbox" id="lowercase" checked>
+            <span class="checkbox-custom"></span>
+            Letras Minúsculas
+          </label>
+
+          <!-- Caixa de seleção para números -->
+          <label>
+            <input type="checkbox" id="numbers">
+            <span class="checkbox-custom"></span>
+            Números
+          </label>
+
+          <!-- Caixa de seleção para símbolos -->
+          <label>
+            <input type="checkbox" id="symbols">
+            <span class="checkbox-custom"></span>
+            Símbolos
+          </label>
+        </div>
+      </div>
+
+      <!-- Contêiner para a avaliação da força da senha -->
+      <div class="strength-container">
+        <label class="title-label">Força da senha</label>
+        <div class="strength-bar-container">
+          <!-- Barra de força da senha -->
+          <div id="strength-bar">
+            <div id="strength-bar-inner"></div>
+          </div>
+
+          <!-- Rótulos para a força da senha -->
+          <div class="strength-labels">
+            <span class="strength-label-text">Fraca</span>
+            <span class="strength-label-text">Média</span>
+            <span class="strength-label-text">Forte</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão para copiar a senha gerada -->
+    <div class="copy-button-container">
+      <button id="copy-password-bottom">Copiar Senha</button>
+    </div>
+  </div>
+
+  <!-- Link para o arquivo de script JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
