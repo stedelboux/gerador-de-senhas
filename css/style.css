@@ -622,3 +622,45 @@ h4 {
   background: #2C1746;
   transform: scale(1.1);
 }
+
+/* Estilos para o botão Copiar Senha */
+#copy-password-bottom {
+  background-color: #FD58FF;
+  /* Cor de fundo verde */
+  border: none;
+  /* Remove a borda padrão */
+  color: #0F021B;
+  /* Cor do texto */
+  padding: 15px 32px;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Alinhamento do texto */
+  text-decoration: none;
+  /* Remove o sublinhado do texto */
+  display: inline-block;
+  /* Faz com que o botão se comporte como um elemento em linha */
+  font-size: 22px;
+  /* Tamanho da fonte */
+  font-family: 'Roboto', sans-serif;
+  /* Aplica a fonte Roboto Medium */
+  font-weight: 500;
+  /* Peso da fonte Medium */
+  margin: 12px 10px;
+  /* Margem ao redor do botão */
+  cursor: pointer;
+  /* Muda o cursor para uma mãozinha ao passar o mouse sobre o botão */
+  border-radius: 8px;
+  /* Borda arredondada */
+  transition: background-color 0.3s ease;
+  /* Transição suave para a cor de fundo */
+}
+
+#copy-password-bottom:hover {
+  background-color: var(--strong-color);
+  /* Cor de fundo ao passar o mouse */
+}
+
+#copy-password-bottom:active {
+  background-color: darken(var(--strong-color), 10%);
+  /* Cor de fundo quando o botão é pressionado */
+}
