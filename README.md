@@ -37,4 +37,4 @@ Este projeto é licenciado sob a [MIT License](LICENSE).
 
 ## Contato
 
-Para mais informações ou dúvidas, entre em contato: [Seu Nome](mailto:seuemail@exemplo.com).
+Para mais informações ou dúvidas, entre em contato: [Seu Nome](mailto:stephaniedelboux@gmail.com).
